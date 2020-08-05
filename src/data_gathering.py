@@ -1,3 +1,4 @@
+import numpy as np
 import pandas as pd
 import string
 import os
@@ -9,9 +10,9 @@ import os
 
 
 def energy_data():
-    filelist = os.listdir('../data/solar_output')
+    filelist = os.listdir('../../data/solar_output/')
 
-    fl = ['../data/solar_output/' + str(f) for f in filelist]
+    fl = ['../../data/solar_output/' + str(f) for f in filelist]
 
     dfs = [pd.read_csv(f) for f in fl]
 
@@ -26,6 +27,8 @@ def energy_data():
     big_df = big_df.sort_values('time')
     big_df.set_index('time', inplace=True)
 
+    big_df = big_df.astype(float)
+
     hourly = big_df.resample('H').sum()
 
     hourly = hourly['2018-01-30':]
@@ -35,8 +38,8 @@ def energy_data():
 def weather_data():
     weather_cols = ['HourlyAltimeterSetting', 'HourlyDewPointTemperature', 'HourlyDryBulbTemperature',
     'HourlyRelativeHumidity', 'HourlySeaLevelPressure', 'HourlySkyConditions', 'HourlyStationPressure', 
-    'HourlyVisibility', 'HourlyWindSpeed']
-    df = pd.read_csv('../data/weather/weatherstation2.csv')
+    'HourlyVisibility', 'HourlyWindSpeed', 'HourlyWindDirection', 'HourlyPrecipitation']
+    df = pd.read_csv('../../data/weather/weatherstation2.csv')
 
     df['DATE'] = pd.to_datetime(df['DATE'])
     df.set_index('DATE', inplace=True)
@@ -45,7 +48,7 @@ def weather_data():
 
     for col in cols_with_letter:
         letter = letter_in_column(df[col])
-        df[col] = remove_letter_from_column(df, col, value)
+        df[col] = remove_letter_from_column(df, col, letter)
 
     df['cloud_coverage'] = cloud_coverage(df['HourlySkyConditions'])
     weather_cols.append('cloud_coverage')
