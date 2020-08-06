@@ -37,18 +37,20 @@ def energy_data():
 
 def weather_data():
     weather_cols = ['HourlyAltimeterSetting', 'HourlyDewPointTemperature', 'HourlyDryBulbTemperature',
-    'HourlyRelativeHumidity', 'HourlySeaLevelPressure', 'HourlySkyConditions', 'HourlyStationPressure', 
+    'HourlyRelativeHumidity', 'HourlySkyConditions', 'HourlyStationPressure', 
     'HourlyVisibility', 'HourlyWindSpeed', 'HourlyWindDirection', 'HourlyPrecipitation']
     df = pd.read_csv('../../data/weather/weatherstation2.csv')
 
     df['DATE'] = pd.to_datetime(df['DATE'])
     df.set_index('DATE', inplace=True)
 
-    cols_with_letter = columns_with_letter(df[weather_cols])
+    cols_with_letter = '123'
+    while len(cols_with_letter) > 0:
+        cols_with_letter = columns_with_letter(df[weather_cols])
 
-    for col in cols_with_letter:
-        letter = letter_in_column(df[col])
-        df[col] = remove_letter_from_column(df, col, letter)
+        for col in cols_with_letter:
+            letter = letter_in_column(df[col])
+            df[col] = remove_letter_from_column(df, col, letter)
 
     df['cloud_coverage'] = cloud_coverage(df['HourlySkyConditions'])
     weather_cols.append('cloud_coverage')
