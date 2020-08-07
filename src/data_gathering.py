@@ -21,6 +21,7 @@ def energy_data():
     big_df.columns = ['time', 'nexus_meter', 'inverter']
 
     big_df.drop([0,1], axis=0, inplace=True)
+    big_df.drop('inverter', axis=1, inplace=True)
 
     big_df['time'] = pd.to_datetime(big_df['time'])
 
@@ -44,6 +45,8 @@ def weather_data():
     df['DATE'] = pd.to_datetime(df['DATE'])
     df.set_index('DATE', inplace=True)
 
+    df['HourlyPrecipitation'] = ['0.00' if val == 'T' else val for val in df['HourlyPrecipitation']]
+
     cols_with_letter = '123'
     while len(cols_with_letter) > 0:
         cols_with_letter = columns_with_letter(df[weather_cols])
@@ -51,6 +54,16 @@ def weather_data():
         for col in cols_with_letter:
             letter = letter_in_column(df[col])
             df[col] = remove_letter_from_column(df, col, letter)
+
+    to_drop = weather[(weather.index.hour == 23) & (weather.index.minute == 59)].index
+    weather.drop(to_drop, axis=0, inplace=True)
+
+    weather['HourlyDewPointTemperature'].loc[weather['HourlyDewPointTemperature'] == '*'] = np.nan
+    weather['HourlyDryBulbTemperature'].loc[weather['HourlyDryBulbTemperature'] == '*'] = np.nan
+    weather['HourlyRelativeHumidity'].loc[weather['HourlyRelativeHumidity'] == '*'] = np.nan
+    weather['HourlyVisibility'].loc[weather['HourlyVisibility'] == '*'] = np.nan   
+
+    weather['HourlyWindDirection'] = weather['HourlyWindDirection'].replace('', np.nan) 
 
     df['cloud_coverage'] = cloud_coverage(df['HourlySkyConditions'])
     weather_cols.append('cloud_coverage')
