@@ -55,15 +55,15 @@ def weather_data():
             letter = letter_in_column(df[col])
             df[col] = remove_letter_from_column(df, col, letter)
 
-    to_drop = weather[(weather.index.hour == 23) & (weather.index.minute == 59)].index
-    weather.drop(to_drop, axis=0, inplace=True)
+    to_drop = df[(df.index.hour == 23) & (df.index.minute == 59)].index
+    df.drop(to_drop, axis=0, inplace=True)
 
-    weather['HourlyDewPointTemperature'].loc[weather['HourlyDewPointTemperature'] == '*'] = np.nan
-    weather['HourlyDryBulbTemperature'].loc[weather['HourlyDryBulbTemperature'] == '*'] = np.nan
-    weather['HourlyRelativeHumidity'].loc[weather['HourlyRelativeHumidity'] == '*'] = np.nan
-    weather['HourlyVisibility'].loc[weather['HourlyVisibility'] == '*'] = np.nan   
+    df['HourlyDewPointTemperature'].loc[df['HourlyDewPointTemperature'] == '*'] = np.nan
+    df['HourlyDryBulbTemperature'].loc[df['HourlyDryBulbTemperature'] == '*'] = np.nan
+    df['HourlyRelativeHumidity'].loc[df['HourlyRelativeHumidity'] == '*'] = np.nan
+    df['HourlyVisibility'].loc[df['HourlyVisibility'] == '*'] = np.nan   
 
-    weather['HourlyWindDirection'] = weather['HourlyWindDirection'].replace('', np.nan) 
+    df['HourlyWindDirection'] = df['HourlyWindDirection'].replace('', np.nan) 
 
     df['cloud_coverage'] = cloud_coverage(df['HourlySkyConditions'])
     weather_cols.append('cloud_coverage')
