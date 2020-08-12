@@ -1,3 +1,5 @@
-![Comparison of Models](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7308868/)
-![Integration of PV into grid](https://www.sciencedirect.com/science/article/pii/S2589299119300576#:~:text=Solar%2DGrid%20integration%20is%20the,component%20manufacturing%2C%20installations%20and%20operation.)
-
+1.) ![Comparison of Models](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7308868/)
+2.) ![Integration of PV into grid](https://www.sciencedirect.com/science/article/pii/S2589299119300576#:~:text=Solar%2DGrid%20integration%20is%20the,component%20manufacturing%2C%20installations%20and%20operation.)
+3.) ![Integrating Renewable Energies into grid](https://www.rff.org/publications/explainers/renewables-101-integrating-renewables/)
+4.) ![Growth of renewable energy](https://www.eia.gov/todayinenergy/detail.php?id=38752)
+5.) ![Affects of humidity on solar energy production](https://www.solar.com/learn/how-do-wind-and-humidity-affect-solar-panel-efficiency/)
