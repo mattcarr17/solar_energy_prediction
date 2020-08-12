@@ -17,7 +17,6 @@ Analysis by Matt Carr
 - [Introduction](##Introduction)
 - [Project Overview](##Project-Overview)
 - [Data](##Data)
-- [Methodology](##Methodology)
 - [Data Preparation](##Data-Preparation)
 - [Modeling](##Modeling)
 - [Results](##Results)
@@ -66,10 +65,6 @@ Using these features I also created three additional variables:
 - cloud_coverage -> percentage of sky covered by clouds
 
 The data stored in this repo is sufficient to run through the analysis. However, if you wish to add additional data you can do so. You can download more weather data [here](https://www.ncdc.noaa.gov/cdo-web/datatools/lcd), just make sure you select the station mentioned above. To download additional energy data you can utilize the web scraper present in this repo. Simple instructions on how to download this data is located in the final notebook. Be sure you have energy and weather data for the same time period.
-
-## Methodology
-
-I utilize supervised machine learning to accomplish the project task of predicting future solar energy production. 
 
 ## Data Preparation
 
