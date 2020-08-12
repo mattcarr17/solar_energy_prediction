@@ -48,22 +48,22 @@ As mentioned previously, this project utilizes data from two sources. The energy
 This project used energy and weather data from January 29, 2018 to July 20, 2020, all of which is already stored in the data directory of this repo. A link to which can be found at the top of this document. The energy data is located under data/solar_output/ and weather is located under data/weather/.
 
 Between these two datasets, I was presented with the following variables:
-    - nexus_meter -> Energy produced from solar farm in kilowatt hours
-    - HourlyAltimeterSetting -> atmospheric pressure reduced to sea level. Given in Hg (inches of Mercury)
-    - HourlyDewPointTemperature -> dew point temperature in F
-    - HourlyDryBulbTemperature -> Temperature in F
-    - HourlyRelativeHumidity -> Humidity given in nearest whole percentage
-    - HourlyStationPressure -> atmospheric pressure at station in Hg (inches of Mercury)
-    - HourlyVisibility -> Horizontal distance an object can be seen given in whole miles
-    - HourlyWindSpeed -> speed of wind in mph
-    - HourlyWindDirection -> Wind direction from true north using compass directions
-    - HourlyPrecipitation -> Amount of precipitation in inches
-    - HourlySkyConditions -> Sky conditions in layers of cloud cover
+- nexus_meter -> Energy produced from solar farm in kilowatt hours
+- HourlyAltimeterSetting -> atmospheric pressure reduced to sea level. Given in Hg (inches of Mercury)
+- HourlyDewPointTemperature -> dew point temperature in F
+- HourlyDryBulbTemperature -> Temperature in F
+- HourlyRelativeHumidity -> Humidity given in nearest whole percentage
+- HourlyStationPressure -> atmospheric pressure at station in Hg (inches of Mercury)
+- HourlyVisibility -> Horizontal distance an object can be seen given in whole miles
+- HourlyWindSpeed -> speed of wind in mph
+- HourlyWindDirection -> Wind direction from true north using compass directions
+- HourlyPrecipitation -> Amount of precipitation in inches
+- HourlySkyConditions -> Sky conditions in layers of cloud cover
 
 Using these features I also created three additional variables:
-    - week -> week of year energy was produced
-    - hour -> hour of day energy was produced
-    - cloud_coverage -> percentage of sky covered by clouds
+- week -> week of year energy was produced
+- hour -> hour of day energy was produced
+- cloud_coverage -> percentage of sky covered by clouds
 
 The data stored in this repo is sufficient to run through the analysis. However, if you wish to add additional data you can do so. You can download more weather data [here](https://www.ncdc.noaa.gov/cdo-web/datatools/lcd), just make sure you select the station mentioned above. To download additional energy data you can utilize the web scraper present in this repo. Simple instructions on how to download this data is located in the final notebook. Be sure you have energy and weather data for the same time period.
 
