@@ -3,25 +3,25 @@
 Analysis by Matt Carr
 
 ## Repo Contents
-- ![Exploratory Notebooks](https://github.com/mattcarr17/solar_energy_prediction/tree/master/notebooks/exploratory)
-- ![Report Notebook]()
-- ![Project Presentation]()
-- ![Project Data](https://github.com/mattcarr17/solar_energy_prediction/tree/master/data)
-- ![Energy Data Web Scraper]()
-- ![References](https://github.com/mattcarr17/solar_energy_prediction/tree/master/references)
-- ![Project Source Code](https://github.com/mattcarr17/solar_energy_prediction/tree/master/src)
-- ![Project Visuals](https://github.com/mattcarr17/solar_energy_prediction/tree/master/report/figures)
-- ![Conda Environment]()
+- [Exploratory Notebooks](https://github.com/mattcarr17/solar_energy_prediction/tree/master/notebooks/exploratory)
+- [Report Notebook](https://github.com/mattcarr17/solar_energy_prediction/blob/master/notebooks/report/final_notebook1.ipynb)
+- [Project Presentation](https://github.com/mattcarr17/solar_energy_prediction/blob/master/report/Presentation.pdf)
+- [Project Data](https://github.com/mattcarr17/solar_energy_prediction/tree/master/data)
+- [Energy Data Web Scraper](https://github.com/mattcarr17/solar_energy_prediction/blob/master/src/web_scraper.py)
+- [References](https://github.com/mattcarr17/solar_energy_prediction/tree/master/references)
+- [Project Source Code](https://github.com/mattcarr17/solar_energy_prediction/tree/master/src)
+- [Project Visuals](https://github.com/mattcarr17/solar_energy_prediction/tree/master/report/figures)
+- [Conda Environment](https://github.com/mattcarr17/solar_energy_prediction/blob/master/environment.yml)
 
 ## Table of Contents
-- ![Introduction](##Introduction)
-- ![Project Overview](##Project-Overview)
-- ![Data](##Data)
-- ![Methodology](##Methodology)
-- ![Data Preparation](##Data-Preparation)
-- ![Modeling](##Modeling)
-- ![Results](##Results)
-- ![Next Steps](##Next-Steps)
+- [Introduction](##Introduction)
+- [Project Overview](##Project-Overview)
+- [Data](##Data)
+- [Methodology](##Methodology)
+- [Data Preparation](##Data-Preparation)
+- [Modeling](##Modeling)
+- [Results](##Results)
+- [Next Steps](##Next-Steps)
 
 ## Introduction
 
