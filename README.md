@@ -14,14 +14,14 @@ Analysis by Matt Carr
 - [Conda Environment](https://github.com/mattcarr17/solar_energy_prediction/blob/master/environment.yml)
 
 ## Table of Contents
-- [Introduction](##Introduction)
-- [Project Overview](##Project-Overview)
-- [Data](##Data)
-- [Data Preparation](##Data-Preparation)
-- [Modeling](##Modeling)
-- [Results](##Results)
-- [Next Steps](##Next-Steps)
-- [References](##References)
+- [Introduction](#Introduction)
+- [Project Overview](#Project-Overview)
+- [Data](#Data)
+- [Data Preparation](#Data-Preparation)
+- [Modeling](#Modeling)
+- [Results](#Results)
+- [Next Steps](#Next-Steps)
+- [References](#References)
 
 ## Introduction
 
