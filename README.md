@@ -37,8 +37,8 @@ This analysis was done on the University of Illinois' Solar Farm, which supplies
 
 ### Conda Environment
 To run through the code in this project repo, you must first download and activate the Anaconda environment used for this project. This contains all of the libraries and packages needed to do the analysis. If you have Anaconda installed on your computer, this is simple to do. After you have cloned and downloaded the project repo, you can activate the environment by navigating to the base project repo in your terminal and running the following commands:
-    conda env create -f environment.yml
-    conda activate capstone
+```conda env create -f environment.yml```
+```conda activate capstone```
 Instructions on how to do this can be found [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 
 ## Data
