@@ -135,10 +135,10 @@ In addition to gathering more data, I would also like to experiment with other m
 Finally I would like to create an intuitive dashboard that can give regular solar energy productions. This would provide grid operators a simple tool to guage how much solar energy would be produced in the future.
 
 ## References
-[1] Cleary & Palmer. [Renewables 101: Integrating Renewable Energy Sources into the Grid.](https://www.rff.org/publications/explainers/renewables-101-integrating-renewables/)
-[2] EIA. [U.S. renewable electricity generation has doubled since 2008](https://www.eia.gov/todayinenergy/detail.php?id=38752)
-[3] Kelly, Jack. [Starting work on solar electricity forecasting](https://jack-kelly.com/blog/2019-07-01-starting-solar-electricity-nowcasting)
-[4] University of Illinois. [Solar Farms](https://fs.illinois.edu/services/utilities-energy/production/solar-farms)
-[5] Ayegba, Abdul, Joshua. [Impacts of Relative Humidity and Relative Mean Air Temperature on Solar Radiation](http://www.ijsrp.org/research-paper-0217/ijsrp-p6246.pdf)
-[6] Glenn. [How Do Wind and Humidity Affect Solar Panel Efficiency](https://www.solar.com/learn/how-do-wind-and-humidity-affect-solar-panel-efficiency/)
+- [1] Cleary & Palmer. [Renewables 101: Integrating Renewable Energy Sources into the Grid.](https://www.rff.org/publications/explainers/renewables-101-integrating-renewables/)
+- [2] EIA. [U.S. renewable electricity generation has doubled since 2008](https://www.eia.gov/todayinenergy/detail.php?id=38752)
+- [3] Kelly, Jack. [Starting work on solar electricity forecasting](https://jack-kelly.com/blog/2019-07-01-starting-solar-electricity-nowcasting)
+- [4] University of Illinois. [Solar Farms](https://fs.illinois.edu/services/utilities-energy/production/solar-farms)
+- [5] Ayegba, Abdul, Joshua. [Impacts of Relative Humidity and Relative Mean Air Temperature on Solar Radiation](http://www.ijsrp.org/research-paper-0217/ijsrp-p6246.pdf)
+- [6] Glenn. [How Do Wind and Humidity Affect Solar Panel Efficiency](https://www.solar.com/learn/how-do-wind-and-humidity-affect-solar-panel-efficiency/)
 
