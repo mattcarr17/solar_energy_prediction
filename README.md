@@ -25,7 +25,7 @@ Analysis by Matt Carr
 
 ## Introduction
 
-Over the past decade, renewable energies have seen massive growth due to decreasing costs and obvious environmental benefits compared to conventional energy sources. [2, 1] However, due to their intermittent nature, itegrating these sources into the current electric grid has proved challenging. The way our current grid operates, energy consumption (energy leaving the grid) must balance energy generation (energy entering the grid) at any given time. [2] If this balance is not kept, it can lead to grid failures that can produce power outages and black outs. Conventional energy production can be turned on and off at will, allowing for easy control of how much energy is entering the grid. In order to keep the balance between energy consumption and energy generation, the total energy produced from renewable sources and conventional sources must match the energy demand at any given time. [1]
+Over the past decade, renewable energies have seen massive growth due to decreasing costs and obvious environmental benefits compared to conventional energy sources. [2, 1] However, due to their intermittent nature, integrating these sources into the current electric grid has proved challenging. The way our current grid operates, energy consumption (energy leaving the grid) must balance energy generation (energy entering the grid) at any given time. [2] If this balance is not kept, it can lead to grid failures that can produce power outages and black outs. Conventional energy production can be turned on and off at will, allowing for easy control of how much energy is entering the grid. In order to keep the balance between energy consumption and energy generation, the total energy produced from renewable sources and conventional sources must match the energy demand at any given time. [1]
 
 Due to their dependence on weather conditions, which can change unexpectedly, it is difficult to predict how much energy renewable sources will produce, and how much energy must be produced from other sources to keep the grid balanced. What is required for grid operators is an accurate prediction of how much energy will be produced from renewable sources, so they can know in advance how much of the remaining demand will have to be met by other sources.[2] Knowing this information even a few hours in advance can drastically improve grid efficiency and reliability.
 
@@ -37,8 +37,8 @@ This analysis was done on the University of Illinois' Solar Farm, which supplies
 
 ### Conda Environment
 To run through the code in this project repo, you must first download and activate the Anaconda environment used for this project. This contains all of the libraries and packages needed to do the analysis. If you have Anaconda installed on your computer, this is simple to do. After you have cloned and downloaded the project repo, you can activate the environment by navigating to the base project repo in your terminal and running the following commands:
-```conda env create -f environment.yml```
-```conda activate capstone```
+- ```conda env create -f environment.yml```
+- ```conda activate capstone```
 Instructions on how to do this can be found [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 
 ## Data
